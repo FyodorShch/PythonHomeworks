@@ -18,6 +18,7 @@ if p % s == 0:
     print(f"{x}, {y}")
 else:
     a = s ** 2 - 4*p
-    x = (-s + sqrt(a))/-2
-    y = (-s - sqrt(a))/-2
-    print(x, y)
+    if a >= 0:
+        x = (-s + sqrt(a))/-2
+        y = (-s - sqrt(a))/-2
+        print(x, y)
